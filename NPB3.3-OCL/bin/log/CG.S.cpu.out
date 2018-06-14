@@ -1,0 +1,66 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+
+ Initialization time =           1.995 seconds
+
+   iteration           ||r||                 zeta
+        1       1.36149786942353E-13     9.9986441579140
+        2       2.18419028726993E-15     8.5733279203222
+        3       2.07603530262418E-15     8.5954510374058
+        4       1.91232902313225E-15     8.5969972340738
+        5       1.91869867750034E-15     8.5971549151767
+        6       1.95470671363258E-15     8.5971744311608
+        7       1.86598795429808E-15     8.5971770704913
+        8       1.95343271330961E-15     8.5971774440630
+        9       1.91114411281212E-15     8.5971774983942
+       10       1.80572594280604E-15     8.5971775064409
+       11       1.84035747411567E-15     8.5971775076486
+       12       1.85288776829137E-15     8.5971775078318
+       13       1.83937745329748E-15     8.5971775078598
+       14       1.78925814229182E-15     8.5971775078641
+       15       1.70314090587838E-15     8.5971775078648
+ Benchmark completed
+ VERIFICATION SUCCESSFUL
+ Zeta is     8.5971775078648E+00
+ Error is    1.2397255990878E-15
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.07
+ Mop/s total     =                   948.91
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = randdp
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_CPU
+    Device name  = Intel_Xeon_CPU_E5-2640_v4_2.40GHz
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m2.129s
+user	0m1.189s
+sys	0m1.506s

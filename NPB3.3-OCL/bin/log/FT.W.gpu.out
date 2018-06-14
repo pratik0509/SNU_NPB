@@ -1,0 +1,52 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - FT Benchmark
+
+ Size                :  128x 128x  32
+ Iterations          :              6
+
+ T =    1     Checksum =    5.673612178944E+02    5.293246849175E+02
+ T =    2     Checksum =    5.631436885271E+02    5.282149986629E+02
+ T =    3     Checksum =    5.594024089970E+02    5.270996558037E+02
+ T =    4     Checksum =    5.560698047020E+02    5.260027904925E+02
+ T =    5     Checksum =    5.530898991250E+02    5.249400845633E+02
+ T =    6     Checksum =    5.504159734538E+02    5.239212247086E+02
+ Result verification successful
+ class = W
+
+
+ FT Benchmark Completed.
+ Class           =                        W
+ Size            =            128x 128x  32
+ Iterations      =                        6
+ Time in seconds =                     0.04
+ Mop/s total     =                  9570.19
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = randdp
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_GPU
+    Device name  = GeForce_GTX_1080_Ti
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m2.418s
+user	0m0.320s
+sys	0m1.878s

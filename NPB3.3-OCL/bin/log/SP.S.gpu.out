@@ -1,0 +1,66 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:   12x  12x  12
+ Iterations:  100    dt:    0.0150000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Verification being performed for class S
+ accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1 2.7470315451341E-02 2.7470315451339E-02 5.9486376021593E-14
+           2 1.0360746705272E-02 1.0360746705285E-02 1.3250590888277E-12
+           3 1.6235745065072E-02 1.6235745065096E-02 1.4571649573529E-12
+           4 1.5840557224468E-02 1.5840557224456E-02 7.9198730199312E-13
+           5 3.4849040609361E-02 3.4849040609362E-02 5.2964034193339E-14
+ Comparison of RMS-norms of solution error
+           1 2.7289258557385E-05 2.7289258557377E-05 2.7252295115516E-13
+           2 1.0364446640823E-05 1.0364446640837E-05 1.3551616230074E-12
+           3 1.6154798287138E-05 1.6154798287166E-05 1.7852143539932E-12
+           4 1.5750704994490E-05 1.5750704994480E-05 6.3091719009848E-13
+           5 3.4177666183389E-05 3.4177666183391E-05 3.6480913929818E-14
+ Verification Successful
+
+
+ SP Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                      100
+ Time in seconds =                     0.04
+ Mop/s total     =                  2300.69
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = (none)
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_GPU
+    Device name  = GeForce_GTX_1080_Ti
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m4.065s
+user	0m1.743s
+sys	0m1.991s

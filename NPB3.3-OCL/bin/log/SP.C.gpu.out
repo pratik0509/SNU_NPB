@@ -1,0 +1,81 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class C
+ accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1 5.8816915818294E+02 5.8816915818290E+02 6.9584168109432E-14
+           2 2.4544176035691E+02 2.4544176035690E+02 4.6898263370405E-14
+           3 3.2938291918509E+02 3.2938291918510E+02 3.4342522621654E-14
+           4 3.0819249718906E+02 3.0819249718910E+02 1.3888428431120E-13
+           5 4.5972237991758E+02 4.5972237991760E+02 4.0185363899565E-14
+ Comparison of RMS-norms of solution error
+           1 2.5981205001830E-01 2.5981205001830E-01 1.4956121495960E-14
+           2 2.5908889223146E-02 2.5908889223150E-02 1.7260937288938E-13
+           3 5.1328864163198E-02 5.1328864163200E-02 3.9609213003050E-14
+           4 4.8060734194540E-02 4.8060734194540E-02 8.2295237297404E-15
+           5 5.4833774913006E-01 5.4833774913010E-01 7.2079552683282E-14
+ Verification Successful
+
+
+ SP Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      400
+ Time in seconds =                   116.60
+ Mop/s total     =                 12436.83
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = (none)
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_GPU
+    Device name  = GeForce_GTX_1080_Ti
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	2m1.373s
+user	1m22.188s
+sys	0m38.956s

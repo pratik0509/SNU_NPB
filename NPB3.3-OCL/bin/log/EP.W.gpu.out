@@ -1,0 +1,60 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - EP Benchmark
+
+ Number of random numbers generated:        67108864
+
+EP Benchmark Results:
+
+CPU Time =    0.1889
+N = 2^   25
+No. Gaussian Pairs =        26354769
+Sums =    -2.863319731646031E+03    -6.320053679108715E+03
+Counts: 
+  0       12281576
+  1       11729692
+  2        2202726
+  3         137368
+  4           3371
+  5             36
+  6              0
+  7              0
+  8              0
+  9              0
+
+
+ EP Benchmark Completed.
+ Class           =                        W
+ Size            =                 67108864
+ Iterations      =                        0
+ Time in seconds =                     0.19
+ Mop/s total     =                   355.20
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = randdp
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_GPU
+    Device name  = GeForce_GTX_1080_Ti
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m2.360s
+user	0m0.192s
+sys	0m1.972s

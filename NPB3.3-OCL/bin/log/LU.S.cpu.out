@@ -1,0 +1,66 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - LU Benchmark
+
+ Size:   12x  12x  12
+ Iterations:                     50
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1   1.6196343210977E-02 1.6196343210977E-02 1.7136939649944E-15
+           2   2.1976745164826E-03 2.1976745164821E-03 2.0562438254747E-13
+           3   1.5179927653405E-03 1.5179927653399E-03 3.5611711435280E-13
+           4   1.5029584436005E-03 1.5029584435994E-03 7.1387633800580E-13
+           5   3.4264073155897E-02 3.4264073155896E-02 1.5998466262740E-14
+ Comparison of RMS-norms of solution error
+           1   6.4223319957952E-04 6.4223319957961E-04 1.4146908336996E-13
+           2   8.4144342047353E-05 8.4144342047348E-05 5.5083493133352E-14
+           3   5.8588269616510E-05 5.8588269616485E-05 4.1972669078056E-13
+           4   5.8474222595116E-05 5.8474222595157E-05 7.0098611942769E-13
+           5   1.3103347914112E-03 1.3103347914111E-03 2.9290801982487E-14
+ Comparison of surface integral
+               7.8418928865937E+00 7.8418928865937E+00 1.1326071811291E-16
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.07
+ Mop/s total     =                  1376.66
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = (none)
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_CPU
+    Device name  = Intel_Xeon_CPU_E5-2640_v4_2.40GHz
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m4.354s
+user	0m3.352s
+sys	0m1.512s

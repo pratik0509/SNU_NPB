@@ -1,0 +1,52 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - FT Benchmark
+
+ Size                :   64x  64x  64
+ Iterations          :              6
+
+ T =    1     Checksum =    5.546087004964E+02    4.845363331978E+02
+ T =    2     Checksum =    5.546385409190E+02    4.865304269511E+02
+ T =    3     Checksum =    5.546148406171E+02    4.883910722337E+02
+ T =    4     Checksum =    5.545423607415E+02    4.901273169046E+02
+ T =    5     Checksum =    5.544255039624E+02    4.917475857993E+02
+ T =    6     Checksum =    5.542683411903E+02    4.932597244941E+02
+ Result verification successful
+ class = S
+
+
+ FT Benchmark Completed.
+ Class           =                        S
+ Size            =             64x  64x  64
+ Iterations      =                        6
+ Time in seconds =                     0.02
+ Mop/s total     =                  7174.78
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = randdp
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_CPU
+    Device name  = Intel_Xeon_CPU_E5-2640_v4_2.40GHz
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	0m1.871s
+user	0m0.745s
+sys	0m1.350s

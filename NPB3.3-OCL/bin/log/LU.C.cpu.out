@@ -1,0 +1,76 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - LU Benchmark
+
+ Size:  162x 162x 162
+ Iterations:                    250
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class C
+ Accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1   1.0376698032354E+04 1.0376698032354E+04 1.7529558997230E-16
+           2   8.9221245880101E+02 8.9221245880101E+02 5.0968504911663E-16
+           3   2.5623881458266E+03 2.5623881458266E+03 0.0000000000000E+00
+           4   2.1919434385783E+03 2.1919434385783E+03 4.1492617271312E-16
+           5   1.7807805726106E+04 1.7807805726106E+04 1.2257474715456E-15
+ Comparison of RMS-norms of solution error
+           1   2.1598639971695E+02 2.1598639971695E+02 2.6318054717937E-16
+           2   1.5578955923986E+01 1.5578955923986E+01 2.2804568522660E-16
+           3   5.4131886307721E+01 5.4131886307721E+01 1.3126140325517E-15
+           4   4.8226264315405E+01 4.8226264315405E+01 2.9467044393614E-16
+           5   4.5590291004325E+02 4.5590291004325E+02 1.9949306787418E-15
+ Comparison of surface integral
+               6.6640455357218E+01 6.6640455357218E+01 1.0662333142103E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      250
+ Time in seconds =                   134.80
+ Mop/s total     =                 15126.00
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = (none)
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_CPU
+    Device name  = Intel_Xeon_CPU_E5-2640_v4_2.40GHz
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	2m20.360s
+user	22m7.495s
+sys	0m25.436s

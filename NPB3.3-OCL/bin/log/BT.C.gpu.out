@@ -1,0 +1,71 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OCL) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1 6.2398116551765E+03 6.2398116551765E+03 8.7454053298396E-16
+           2 5.0793239190424E+02 5.0793239190424E+02 6.7146832649560E-16
+           3 1.5423530093014E+03 1.5423530093014E+03 1.4741999663632E-16
+           4 1.3302387929291E+03 1.3302387929291E+03 1.7092696187469E-16
+           5 1.1604087428436E+04 1.1604087428436E+04 4.7026259016844E-16
+ Comparison of RMS-norms of solution error
+           1 1.6462008369091E+02 1.6462008369091E+02 3.4530063152887E-16
+           2 1.1497107903824E+01 1.1497107903824E+01 3.0900933595820E-16
+           3 4.1207446207462E+01 4.1207446207462E+01 8.6215332561842E-16
+           4 3.7087651059694E+01 3.7087651059694E+01 3.8316944614069E-16
+           5 3.6211053051841E+02 3.6211053051841E+02 1.4128027953643E-15
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   294.97
+ Mop/s total     =                  9717.17
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              04 Jun 2018
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm -lOpenCL
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -mcmodel=medium
+    CLINKFLAGS   = -O3 -mcmodel=medium
+    RAND         = (none)
+
+ OpenCL options:
+    Device type  = CL_DEVICE_TYPE_GPU
+    Device name  = GeForce_GTX_1080_Ti
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
+
+real	5m1.451s
+user	3m24.763s
+sys	1m36.424s
