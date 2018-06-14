@@ -49,7 +49,7 @@
 #include "cl_util.h"
 
 //#define USE_CHECK_FINISH
-//#define TIMER_DETAIL
+#define TIMER_DETAIL
 
 #ifdef TIMER_DETAIL
 enum OPENCL_TIMER {
