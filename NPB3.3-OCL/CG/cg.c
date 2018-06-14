@@ -1235,8 +1235,8 @@ static void makea(int n, int nz, int firstrow, int lastrow)
                                  0, NULL, NULL);
   clu_CheckError(ecode, "clEnqueueNDRangeKernel()");
   CHECK_FINISH();
-  DTIMER_STOP(T_KERNEL_MAKEA_3);
   printf("Makea 3 Time: %.4f", timer_read(T_KERNEL_MAKEA_3));
+  DTIMER_STOP(T_KERNEL_MAKEA_3);
   //---------------------------------------------------------------------
   // ... remove empty entries and generate final results
   //---------------------------------------------------------------------
