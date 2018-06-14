@@ -49,7 +49,7 @@
 #include "cl_util.h"
 
 //#define USE_CHECK_FINISH
-#define TIMER_DETAIL
+// #define TIMER_DETAIL
 
 #ifdef TIMER_DETAIL
 enum OPENCL_TIMER {
@@ -1236,7 +1236,6 @@ static void makea(int n, int nz, int firstrow, int lastrow)
   clu_CheckError(ecode, "clEnqueueNDRangeKernel()");
   CHECK_FINISH();
   DTIMER_STOP(T_KERNEL_MAKEA_3);
-  fprintf(stderr, "----- %lf\n", timer_read(T_KERNEL_MAKEA_3));
   //---------------------------------------------------------------------
   // ... remove empty entries and generate final results
   //---------------------------------------------------------------------
